@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: lyra
+Version: 1.0
+Summary: lyra is a post-processing Python package designed for the analysis and visualizing raw astronomical light curve data.
+Home-page: notyetdeveloped.com
+Author: Zachary Pereira
+Author-email: zacharypereira14@gmail.com
+License: personal
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Observatioanl Astronomers/Astrophysicists/Data Analysts
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
