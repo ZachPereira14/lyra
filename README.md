@@ -4,7 +4,7 @@ Lyra is a post-processing Python package developed for the University of Massach
 
 ## Description
 
-Lyra provides tools to process and analyze photometric data from astronomical observations. It is currently intended to be used directly after the photometric analysis performed by the AstroimageJ program, offering advanced capabilities for data analysis and visualization. However, this provides a great entry-level framework for any adaptation to other research pipelines with the modification of different capture variable labels. 
+Lyra provides tools to process and analyze photometric data from astronomical observations. It is intended to be used directly after the photometric analysis performed by the AstroimageJ program, offering advanced capabilities for data analysis and visualization.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -69,6 +69,12 @@ Here's a quick guide on how to use Lyra for analyzing and visualizing your astro
 from lyra.core import process_dfs, norm
 from lyra.plot import plot_lightcurve
 from lyra.data import load_data, clean_data, aavso_conv
+
+```
+Or import the entire package as:
+
+```python
+import lyra as ly
 ```
 
 ### Example Workflow
@@ -76,8 +82,8 @@ from lyra.data import load_data, clean_data, aavso_conv
 1. **Load and Clean Data**
 
 ```python
-data = load_data('datafile.csv')
-cleaned_data = clean_data(data)
+data = ly.load_data('datafile.csv')
+cleaned_data = ly.clean_data(data)
 ```
 
 2. **Process Data**
@@ -87,13 +93,13 @@ The `process_dfs` function processes multiple DataFrames, normalizing the BJD ti
 ```python
 dataframes = [('file1.csv', 'label1'), ('file2.csv', 'label2')]
 period = 0.1
-processed_data = process_dfs(dataframes, period, clean=True)
+processed_data = ly.process_dfs(dataframes, period, clean=True)
 ```
 
 3. **Plot Data**
 
 ```python
-plot_lightcurve(processed_data)
+ly.plot_lightcurve(processed_data)
 ```
 
 ## Command-Line Interface
@@ -148,3 +154,4 @@ For any questions or issues, please contact Zachary Pereira at [zacharypereira14
 ---
 
 Feel free to adjust any sections or add additional details as needed. Let me know if there's anything else you'd like to include or modify!
+
